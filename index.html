@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rugby Score</title>
+</head>
+<body>
+    <div id="split">
+        <div>
+            <h1 class="title">HOME</h1>
+            <p class="score" id="num1-el">0</p>
+            <div class="point-buttons">
+                <button
+                    onclick="home2()" 
+                    class="button">+2
+                </button>
+                <button
+                    onclick="home3()" 
+                    class="button">+3
+                </button>
+                <button
+                    onclick="home5()"
+                    class="button">+5
+                </button>
+            </div>
+        </div>
+        <div>
+            <h1 class="title">GUEST</h1>
+            <p class="score" id="num2-el">0</p>
+            <div class="point-buttons">
+                <button
+                    onclick="guest2()" 
+                    class="button">+2
+                </button>
+                <button
+                    onclick="guest3()" 
+                    class="button">+3
+                </button>
+                <button
+                    onclick="guest5()"
+                    class="button">+5
+                </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button
+            onclick="reset()"
+            id="reset-button"
+            >Reset Scores</button>
+    </div>
+</body>
+<script src="index.js"></script> <!-- Had two issues relating to script.
+    1. My functions were undefined due to not adding this initially.
+    2. "TypeError is Null" issue solved but moving to bottom of document -->
+</html>
